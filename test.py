@@ -10,5 +10,10 @@ def keystream_gen(plaintext, key):
 
 plaintext = input("plaintext(all lowercase): ")
 key = input("key(all lowercase): ")
+if len(key) == 0:
+	print("You didnt put in a key")
+keyst = keystream_gen(plaintext, key)
+
+alph = "abcedfghijklmnopqrstuvwxyz"
 
 			
