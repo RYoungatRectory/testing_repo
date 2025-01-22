@@ -1,12 +1,14 @@
-alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+def keystream_gen(plaintext, key):
+	keysteam = ""
+	j = 0
+	for i in range(len(plaintext)):
+		keystream += key[j]
+		j += 1
+		if j >= len(key):
+			j = 0
+	return keystream
 
-def cypher(N):
-	map = {}
-	for i in range(
+plaintext = input("plaintext(all lowercase): ")
+key = input("key(all lowercase): ")
 
-
-msg = input("Plaintext: ")
-shift = input("How much do you want to shift by: ")
-
-
-
+			
